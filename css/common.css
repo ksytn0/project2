@@ -33,6 +33,21 @@
     background: #404040 !important;
 }
 
+/*슬라이드바*/
+.slidebar_out{
+    width: 1000px; height: 8px;
+    border: 1px solid #E6E6E6;
+    background: #E6E6E6;
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+.slidebar_out > .slidebar_in{
+    width: 800px; height: 6px;
+    border: 1px solid #8E8E8E;
+    background: #8E8E8E;;
+    box-sizing: border-box;
+}
+
 /*좌우버튼*/
 #l_btn, #r_btn{
     width: 30px; height: 73px;

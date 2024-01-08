@@ -29,7 +29,7 @@
     <script src="./script/jquery-3.7.1.js"></script>
 </head>
 <body>
-    <form name="search" method="post" action="search.php">
+    <form name="search" method="post" action="search.php"> <!--form:검색영역지정-->
         <input type="checkbox" id="toggle">
 
         <header>
@@ -52,6 +52,7 @@
                 </h1>
 
                 <nav class="gnb">
+                    <label for="toggle" class="c_btn"><i class="fas fa-times"></i></label>
                     <ul>
                         <li>
                             <a href="#" title="">ourstory<i class="fas fa-angle-right"></i></a>
@@ -100,7 +101,6 @@
                         </li>
                     </ul>
                 </nav>
-
                 <div class="icon">
                     <ul>
                         <!--검색-->
@@ -108,54 +108,111 @@
                         <!--장바구니-->
                         <li><a href="#" title="장바구니 바로가기"><img src="./images/cart.png" alt="장바구니"></a></li>
                     </ul>
+                    <label for="toggle" class="total_btn"><i class="fas fa-bars"></i></label>
                 </div>
             </div>
         </header>
 
-
-
         <main>
             <!--section1(메인배너)-->
             <section class="sec_banner">
-                <h2>메인배너슬라이드</h2>
-                <div class="visual_slide">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="#" title="세럼">
-                                <i>수백 년 발효의 비밀에서 탄생한<br>'빈바이옴'이 선물하는 피부의 활력<br>soseo vinbiome vitamC serum</i>
-                            </a>
-                            <img src="./images/banner01.jpg" atl="배너1">
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" title="발효스킨케어">
-                                <i>양조장 장인들의 지혜로 완성된<br>발효 스킨케어의 시작<br>107 Essentials line</i>
-                            </a>
-                            <img src="./images/banner02.jpg" atl="배너2">
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" title="두피케어">
-                                <i>프리&프로바이오틱스 콤플렉스가 함유된 약산성 두피 케어 탈모 샴푸<br>두피와 모발을 촉촉하게<br>hair&scalp microbiome care line</i>
-                            </a>
-                                <img src="./images/banner03.jpg" atl="배너3">
-                        </div>
+                <article class="box_banner">
+                    <h2>메인배너슬라이드</h2>
+                    <div class="img_banner1">
+                        <a href="#" title="배너페이지바로가기"><p>수백 년 발효의 비밀에서 탄생한<br>'빈바이옴'이 선물하는 피부의 활력<br><span class="black">soseo vinbiome vitamC serum</span></p>
+                        <img src="./images/banner01.jpg" atl="배너1"></a>          
                     </div>
-                </div>
-
-                <!--컨트롤버튼-->
-                <ul class="ctrl_btn">
-                    <li class="on">&nbsp;</li>
-                    <li>&nbsp;</li>
-                    <li>&nbsp;</li>
-                </ul>
+                    <div class="img_banner2">
+                        <a href="#" title="배너페이지바로가기"><p>양조장 장인들의 지혜로 완성된<br>발효 스킨케어의 시작<br><span class="black">107 Essentials line</span></p>
+                        <img src="./images/banner02.jpg" atl="배너2"></a>
+                    </div>
+                    <div class="img_banner3">
+                        <a href="#" title="배너페이지바로가기"><p>프리&프로바이오틱스 콤플렉스가 함유된 약산성 두피 케어 탈모 샴푸<br>두피와 모발을 촉촉하게<br><span class="black">hair&scalp microbiome care line</span></p>
+                        <img src="./images/banner03.jpg" atl="배너3"></a>
+                    </div>
+                    <!--컨트롤버튼-->
+                    <ul class="ctrl_btn">
+                        <li class="on">&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                    </ul>
+                </article>
             </section>
-            
+
             <!--section2(잘팔리는제품)-->
             <section class="sec_goes">
                 <h2>잘팔리는제품</h2>
-                <h3>goes well product</h3>
-                <a href="#" title="제품보기" class="word_btn">show now &#x21C1;</a>
-            </section>
+                <div class="box_titgoes">
+                    <h3>goes well product</h3>
+                    <a href="#" title="제품보기" class="word_btn">show now &#x21C1;</a>
+                </div>
 
+                <div class="bigbox_goes">
+                    <div class="smallbox_goes">
+                        <div class="box_imggoes">
+                            <a href="#" title="제품자세히보기"><img src="./images/well01.jpg" alt="상품이미지1"></a>
+                        </div>
+                        <div class="box_txtgoes">
+                            <h4>소서 빈바이옴 비타민C 세럼</h4>
+                            <p class="price"><span class="afterprice">54,000원</span> (25% off) <span class="beforeprice">72,000원</span></p>
+                            <span class="starpoint">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+                            <span class="numofreview">(158)reviews</span>
+                        </div>
+                    </div>
+                    <div class="smallbox_goes">
+                        <div class="box_imggoes">
+                            <a href="#" title="제품자세히보기"><img src="./images/well02.jpg" alt="상품이미지2"></a>
+                        </div>
+                        <div class="box_txtgoes">
+                            <h4>스칼프 퓨리파잉 마이크로바이옴 샴푸</h4>
+
+                            <p>25,500원  (25% off) 34,000원</p>
+                            <p class="starpoint">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</p>
+                            <p class="numofreview">(692)reviews</p>
+                        </div>
+                    </div>
+                    <div class="smallbox_goes">
+                        <div class="box_imggoes">
+                            <a href="#" title="제품자세히보기"><img src="./images/well03.jpg" alt="상품이미지3"></a>
+                        </div>
+                        <div class="box_txtgoes">
+                            <h4>에브리데이 플럼프하이드로 크림</h4>
+
+                            <p>34,200원 (10% off) 38,000원</p>
+                            <p class="starpoint">&#x2605;&#x2605;&#x2605;&#x2605;&#x2606;</p>
+                            <p class="numofreview">(725)reviews</p>
+                        </div>
+                    </div>
+                    <div class="smallbox_goes">
+                        <div class="box_imggoes">
+                            <a href="#" title="제품자세히보기"><img src="./images/well04.jpg" alt="상품이미지4"></a>
+                        </div>
+                        <div class="box_txtgoes">
+                            <h4>아보카도 커들 시트 마스크</h4>
+
+                            <p>18,000원 (10% off) 20,000원</p>
+                            <p class="starpoint">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</p>
+                            <p class="numofreview">(116)reviews</p>
+                        </div>
+                    </div>
+                    <div class="smallbox_goes">
+                        <div class="box_imggoes">
+                            <a href="#" title="제품자세히보기"><img src="./images/well05.jpg" alt="상품이미지5"></a>
+                        </div>
+                        <div class="box_txtgoes">
+                            <h4>차가 젤리약산성 클렌저</h4>
+                            
+                            <p>19,800원 (10% off) 22,000원</p>
+                            <p class="starpoint">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</p>
+                            <p class="numofreview">(866)reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <!--슬라이드바-->
+                <div class="slidebar_out">
+                    <div class="slidebar_in"></div>
+                </div>
+            </section>
 
             <!--section3(맴버십혜택)-->
             <section class="sec_membership">
@@ -208,10 +265,10 @@
                 <article>
                     <ul class="box_ourstory">
                         <li>
-                            <img src="./images/ourstory04.PNG" alt="우리이야기이미지">
+                            <img src="./images/ourstoryimg.PNG" alt="우리이야기이미지">
                         </li>
                         <li class="box_txtourstory">
-                            <div>
+                            <div class="box_txtboxourstory">
                                 <img src="./images/Logo.png" alt="메인로고">
                                 <h4>건강하게 빛나는 피부 본연의 아름다움</h4>
                                 <p>‘가문 대대로 내려오는 107가지의 비방’을 뜻하는 원오세븐(107)은 오랫동안 피부 본연의 가치를 지킬 수 있는 방법을 고민했습니다. 그리고 우리만의 오랜 전통이 담긴 원료인 천연발효식초를 바탕으로 현대적인 스킨케어 제품을 만들기 위해 노력했습니다. 천연발효식초에 담겨 있는 장인들의 고집 센 정신과 인내, 그리고 놀라운 에너지를 가진 발효과정은 원오세븐 브랜드의 기점입니다.</p>
@@ -296,46 +353,57 @@
                             <!--리뷰콘텐츠 박스-->
                             <div class="bigbox_review">
                                 <div class="smallbox_review">
-                                    <a href="#" title="리뷰자세히보기"><img src="./images/review01.png" alt="리뷰이미지1"></a>
+                                    <div class="box_imgreview">
+                                        <a href="#" title="리뷰자세히보기"><img src="./images/review01.png" alt="리뷰이미지1"></a>
+                                    </div>
                                     <div class="box_txtreview">
                                         <h4>스칼프 퓨리파잉 마이크로바이옴 샴푸</h4>
                                         <p>향도 좋고 촉촉해서 사용감이 좋은 샴푸에요!거품도 쫀쫀하고 풍성하게 잘 나서 온가족이 같이 쓰기 좋아요~</p>
-                                        <p>5416****님</p>
+                                        <p class="membername">5416****님</p>
                                     </div>
                                 </div>
                                 <div class="smallbox_review">
-                                    <a href="#" title="리뷰자세히보기"><img src="./images/review02.png" alt="리뷰이미지2"></a>
+                                    <div class="box_imgreview">
+                                        <a href="#" title="리뷰자세히보기"><img src="./images/review02.png" alt="리뷰이미지2"></a>
+                                    </div>
                                     <div class="box_txtreview">
                                         <h4>차가 젤리약산성 클렌저</h4>
                                         <p>수부지에 살짝 민감성피부인 저는 성분부터 꼼꼼하게 따지는 편인데, 원오세븐은 약산성 클렌저이기 때문에 아침, 저녁으로 부담없이 사용이 가능하다는 점이 참 마음에 들었어요.
                                             세안 후에도 피부가 당기거나 하지않고 촉촉하더라구요. 게다가 몽글몽글한 젤 타입의 텍스처 안에 녹차 잎이 들어있어 부드러운 스크럽도 자연스럽게 되는 것 같아서 더 좋았어요.</p>
-                                        <p>gxwg****님</p>
+                                        <p class="membername">gxwg****님</p>
                                     </div>
                                 </div>
                                 <div class="smallbox_review">
-                                    <a href="#" title="리뷰자세히보기"><img src="./images/review03.png" alt="리뷰이미지3"></a>
+                                    <div class="box_imgreview">
+                                        <a href="#" title="리뷰자세히보기"><img src="./images/review03.png" alt="리뷰이미지3"></a>
+                                    </div>
                                     <div class="box_txtreview">
                                         <h4>에브리데이 플럼프하이드로 크림</h4>
                                         <p>와 이거 건성피부라면 무조건이에요 !
                                             보습 잘 되는 크림으로 강추하고 싶어요.
                                             너무 워터리한 크림은 보습이 아쉬운데, 이건 너무 워터리하지도 않고 너무 무겁지도 않아 딱이네요</p>
-                                        <p>uy45****님</p>
+                                        <p class="membername">uy45****님</p>
                                     </div>
                                 </div>
                                 <div class="smallbox_review">
+                                    <div class="box_imgreview">
                                         <a href="#" title="리뷰자세히보기"><img src="./images/review04.png" alt="리뷰이미지4"></a>
+                                    </div>
                                     <div class="box_txtreview">
-                                        <h4>에</h4>
-                                        <p>와</p>
-                                        <p>u님</p>
+                                        <h4>에브리데이 플럼프
+                                            하이드로 크림</h4>
+                                        <p>꾸덕한 듯 했지만 바르면 수분감 가득 촉촉한 크림의 제형이 너무 마음에 들었어요. 끈적임 없이 싹! 스며드는 부분도 좋았구요. 좋은 원료로 만들어서 그런지 피부에 보약 넣는 느낌으로다가 꾸준히 써보려고요:)</p>
+                                        <p class="membername">gxwg****님</p>
                                     </div>
                                 </div>
                                 <div class="smallbox_review">
-                                    <a href="#" title="리뷰자세히보기"><img src="./images/review05.png" alt="리뷰이미지5"></a>
+                                    <div class="box_imgreview">
+                                        <a href="#" title="리뷰자세히보기"><img src="./images/review05.png" alt="리뷰이미지5"></a>
+                                    </div>
                                     <div class="box_txtreview">
-                                        <h4>브</h4>
-                                        <p>이</p>
-                                        <p>y님</p>
+                                        <h4>소서 빈바이옴 비타민C 세럼</h4>
+                                        <p>비타민세럼들 다양하게 사용해봤는데 끈적임없이 피부로 바로 스며들어서 좋더라구요 피부속까지 닿는느낌이라 속건조 잡기에도 괜찮았어요 미백제품들에 관심이 많아서 비타민제품 선호하는데 자극없어서 대만족!!</p>
+                                        <p class="membername">wlst****님</p>
                                     </div>
                                 </div>
                             </div>
