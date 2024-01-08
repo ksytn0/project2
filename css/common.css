@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/*탑버튼서식*/
+.top_btn{
+    display: block;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    background: #fff;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0px 0px 3px 1px gray;
+    position: fixed; right: 5%; bottom: 25px;
+}
+
+/*컨트롤버튼서식*/
+.ctrl_btn{
+    /*position: absolute;
+    right: 1.5%; top: 45%;*/
+    z-index: 20;
+    display: flex;
+}
+.ctrl_btn li{
+    width: 15px; height: 15px;
+    border: 2px solid #404040;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.on{
+    background: #404040 !important;
+}
+
+/*좌우버튼*/
+#l_btn, #r_btn{
+    width: 30px; height: 73px;
+    background: rgba(128,128,128,.4);
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px;
+}
+
+/*section 간격서식*/
+section{padding: 100px 0px; box-sizing: border-box;}
+
+/*네모버튼서식*/
+.square_btn{
+    display: inline-block;
+    width: 200px; height: 50px;
+    background: #7E9E90;
+    color: #fff;
+    text-align: center;
+    font-family: 'Hind', serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 50px;
+    letter-spacing: 3px;
+}
+
+/*글자버튼서식*/
+.word_btn{
+    font-family: 'Hind', serif;
+}

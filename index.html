@@ -3,19 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Date" content="2023-12-284T11:42:30+09:00">
-    <meta name="Subject" content="모든 디바이스에 최적화된 반응형웹">
-    <meta name="Titile" content="원오세븐 반응형웹">
-    <meta name="Other" content="작성자이름 적기">
-    <meta name="Distribution" content="배포자이름 적기">
-    <meta name="description" content="원오세븐">
-    <meta name="Copyright" content="원오세븐">
-    <meta name="Build" content="2023-12-28T20">
-    <meta name="format-detection" content="telephone=no">
-
 
     <title>원오세븐 반응형 웹_메인페이지</title>
-
 
     <!-- 파비콘(favicon)삽입 -->
     <link href="./images/" type="image/x-icon" rel="shortcut icon">
@@ -26,37 +15,423 @@
     <!-- 공통서식 header,footer 공통서식 -->
     <link href="./css/common.css" rel="stylesheet" type="text/css">
 
-    <!-- mobile해상도 서식(기본서식) -->
-    <link href="./css/mobile.css" rel="stylesheet" type="text/css">
+    <!-- pc해상도 서식(기본서식) -->
+    <link href="./css/pc.css" rel="stylesheet" type="text/css">
     <!-- tablet해상도 서식-->
     <link href="./css/tablet.css" rel="stylesheet" type="text/css">
-    <!-- pc해상도 서식 -->
-    <link href="./css/pc.css" rel="stylesheet" type="text/css">
+    <!-- mobile해상도 서식 -->
+    <link href="./css/mobile.css" rel="stylesheet" type="text/css">
     
     <!-- 폰트어썸 아이콘포트 주소 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" type="text/css">
-    <!-- 스크립트 -->
-    <script src=""></script>
+    
+    <!-- 1. 제이쿼리 라이브러리 연결하기-->
+    <script src="./script/jquery-3.7.1.js"></script>
 </head>
 <body>
     <form name="search" method="post" action="search.php">
         <input type="checkbox" id="toggle">
 
         <header>
+            <div class="h_top">
+                <nav class="lnb">
+                    <ul>
+                        <li><a href="#" title="로그인페이지 바로가기">로그인</a></li>
+                        <li><a href="#" title="회원가입페이지 바로가기">회원가입</a></li>
+                        <li><a href="#" title="마이페이지 바로가기">마이페이지</a></li>
+                        <li><a href="#" title="고객센터 바로가기">고객센터</a></li>
+                    </ul>
+                </nav>
+            </div>
 
+            <div class="h_bottom">
+                <h1>
+                    <a href="index.html" title="메인페이지 바로가기">
+                        <img src="./images/Logo.png" alt="헤더로고">
+                    </a>
+                </h1>
+
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="#" title="">ourstory<i class="fas fa-angle-right"></i></a>
+                            <ul class="sub">
+                                <li><a href="#" title="우리의가치">우리의 가치</a></li>
+                                <li><a href="#" title="연혁및수상">연혁 및 수상</a></li>
+                                <li><a href="#" title="오시는길">오시는 길</a></li>
+                                <li><a href="#" title="캠페인">캠페인</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" title="">shop<i class="fas fa-angle-right"></i></a>
+                            <ul class="sub">
+                                <li><a href="#" title="제품전체보기">제품 전체보기</a></li>
+                                <li><a href="#" title="신제품">신제품</a></li>
+                                <li><a href="#" title="베스트셀러">베스트셀러</a></li>
+                                <li><a href="#" title="유형별제품">유형별 제품</a></li>
+                                <li><a href="#" title="라인별제품">라인별 제품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" title="">cummunity<i class="fas fa-angle-right"></i></a>
+                            <ul class="sub">
+                                <li><a href="#" title="공지사항">공지사항</a></li>
+                                <li><a href="#" title="SNS">SNS</a></li>
+                                <li><a href="#" title="리뷰게시판">리뷰 게시판</a></li>
+                                <li><a href="#" title="107매거진">107 매거진</a></li>
+                                <li><a href="#" title="맴버십">맴버심</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" title="">event<i class="fas fa-angle-right"></i></a>
+                            <ul class="sub">
+                                <li><a href="#" title="프로모션">프로모션</a></li>
+                                <li><a href="#" title="진행이벤트">진행 이벤트</a></li>
+                                <li><a href="#" title="종료이벤트">종료 이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" title="">learn<i class="fas fa-angle-right"></i></a>
+                            <ul class="sub">
+                                <li><a href="#" title="소서">'소서'</a></li>
+                                <li><a href="#" title="에센셜">'에센셜'</a></li>
+                                <li><a href="#" title="발효술">'발효술'</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="icon">
+                    <ul>
+                        <!--검색-->
+                        <li><img src="./images/search.png" alt="검색하기"></li>
+                        <!--장바구니-->
+                        <li><a href="#" title="장바구니 바로가기"><img src="./images/cart.png" alt="장바구니"></a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
 
 
 
         <main>
+            <!--section1(메인배너)-->
+            <section class="sec_banner">
+                <h2>메인배너슬라이드</h2>
+                <div class="visual_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" title="세럼">
+                                <i>수백 년 발효의 비밀에서 탄생한<br>'빈바이옴'이 선물하는 피부의 활력<br>soseo vinbiome vitamC serum</i>
+                            </a>
+                            <img src="./images/banner01.jpg" atl="배너1">
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" title="발효스킨케어">
+                                <i>양조장 장인들의 지혜로 완성된<br>발효 스킨케어의 시작<br>107 Essentials line</i>
+                            </a>
+                            <img src="./images/banner02.jpg" atl="배너2">
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" title="두피케어">
+                                <i>프리&프로바이오틱스 콤플렉스가 함유된 약산성 두피 케어 탈모 샴푸<br>두피와 모발을 촉촉하게<br>hair&scalp microbiome care line</i>
+                            </a>
+                                <img src="./images/banner03.jpg" atl="배너3">
+                        </div>
+                    </div>
+                </div>
 
+                <!--컨트롤버튼-->
+                <ul class="ctrl_btn">
+                    <li class="on">&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                </ul>
+            </section>
+            
+            <!--section2(잘팔리는제품)-->
+            <section class="sec_goes">
+                <h2>잘팔리는제품</h2>
+                <h3>goes well product</h3>
+                <a href="#" title="제품보기" class="word_btn">show now &#x21C1;</a>
+            </section>
+
+
+            <!--section3(맴버십혜택)-->
+            <section class="sec_membership">
+                <h2>맴버십</h2>
+                <div class="box_titmembership">
+                    <h3>membership</h3>
+                    <a href="#" title="더보기" class="word_btn">read more &#x21C1;</a>
+                </div>
+                <ul class="box_membership">
+                    <li>
+                        <div class="box_imgmembership">
+                            <a href="#" title="맴버십혜택1">
+                                <i>리뷰작성시 적립급 최대 만원</i>
+                            </a>
+                            <img src="./images/promotion1.jpg" alt="이미지1">                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box_imgmembership">
+                            <a href="#" title="맴버십혜택2">
+                                <i>3만원이상 무료배송</i>
+                            </a>
+                            <img src="./images/promotion2.jpg" alt="이미지2">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box_imgmembership">
+                            <a href="#" title="맴버십혜택3">
+                                <i>회원가입시 적립급+쿠폰 혜택</i>
+                            </a>
+                            <img src="./images/promotion3.jpg" alt="이미지3">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box_imgmembership">
+                            <a href="#" title="맴버십혜택4">
+                                <i>카카오채널 추가시 할인쿠폰</i>
+                            </a>
+                            <img src="./images/promotion4.jpg" alt="이미지4">
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!--section4(우리의이야기)-->
+            <section class="sec_ourstory">
+                <h2>우리의이야기</h2>
+                <div class="backimg"></div> <!--css백그라운드이미지-->
+                <h3>ourstory</h3>
+                <article>
+                    <ul class="box_ourstory">
+                        <li>
+                            <img src="./images/ourstory04.PNG" alt="우리이야기이미지">
+                        </li>
+                        <li class="box_txtourstory">
+                            <div>
+                                <img src="./images/Logo.png" alt="메인로고">
+                                <h4>건강하게 빛나는 피부 본연의 아름다움</h4>
+                                <p>‘가문 대대로 내려오는 107가지의 비방’을 뜻하는 원오세븐(107)은 오랫동안 피부 본연의 가치를 지킬 수 있는 방법을 고민했습니다. 그리고 우리만의 오랜 전통이 담긴 원료인 천연발효식초를 바탕으로 현대적인 스킨케어 제품을 만들기 위해 노력했습니다. 천연발효식초에 담겨 있는 장인들의 고집 센 정신과 인내, 그리고 놀라운 에너지를 가진 발효과정은 원오세븐 브랜드의 기점입니다.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <!--section5('소서')-->
+            <section class="sec_soseo">
+                <h2>소서</h2>
+                <article>
+                    <div class="imgbox">
+                        <div class="box_imgsoseo">
+                            <img src="./images/soseo_img01.jpg" alt="바이옴세럼이미지">
+                        </div>
+                    </div>
+                    <div class="box_soseo">
+                        <h3>soseo</h3>
+                        <p class="box_txtsoseo">수백년 발효의 비밀에서 탄생한<br>‘빈바이옴’이 선물하는 피부의 활력<br><strong>soseo vinbiome vitamC serum</strong><br><br>10년 이상 발효된 흑식초에 피부 건강에<br>좋은 인삼과 선별한 원료들만 가득 담았습니다.<br>원오세븐만의 독창적인 방법으로 발효시켜<br>완성된 특별한 발효성분 VinBiome™이 선물하는<br>활력과 생기를 느껴보세요.</p>
+                        <div class="box_btn">
+                            <a href="#" title="더보기" class="square_btn">read more &#x21C1;</a>
+                            <a href="#" title="제품보기" class="square_btn">show now &#x21C1;</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!--section6('에센셜')-->
+            <section class="sec_essentials">
+                <h2>에센셜</h2>
+                <article>
+                    <div class="box_imgessentials">
+                        <img src="./images/essentials_img01.jpg" alt="essentials이미지">
+                    </div>
+                    <div class="box_essentials">
+                        <h3>essentials</h3>
+                        <p class="box_txtessentials">양조장 장인들의 지혜로 완성된<br>
+                            발효 스킨케어의 시작<br>
+                            <strong>107 Essentials line</strong><br><br>
+                            세트 구성<br>
+                            - 차가 젤리 약산성 클렌저 (120ml)<br>
+                            - 마이크로 드리즐 하이드로 토너 (180ml)<br>
+                            - 에브리데이 플럼프 하이드로 크림 (50ml)<br>
+                            - 듀이 글로우 세럼 미스트 (50ml)<br>
+                            - 벨벳 리프트 크림 에센스 (50ml)<br>
+                            - 스쿠알란 커들 시트 마스트 (5매)</p>
+                        <div class="box_btn">
+                            <a href="#" title="더보기" class="square_btn">read more &#x21C1;</a>
+                            <a href="#" title="제품보기" class="square_btn">show now &#x21C1;</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!--section7(리뷰)-->
+            <section class="sec_review">
+                <h2>리뷰</h2>
+                <article>
+                    <div class="box_l_review">
+                        <h3>review</h3>
+                        <p>써본사람만 아는<br>진짜 리뷰를 소개합니다.</p>
+                        <a href="#" title="더보기" class="word_btn">read more &#x21C1;</a>
+                    </div>
+
+                    <div class="box_r_review">
+                        <!--컨트롤버튼-->
+                        <div class="box_rt_review">
+                            <ul class="ctrl_btn">
+                                <li class="on">&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li>&nbsp;</li>
+                            </ul>
+                        </div>
+                        <div class="box_rb_review">
+                            <!--좌우버튼-->
+                            <ul class="move_btn">
+                                <li id="l_btn">&#x2039;</li>
+                                <li id="r_btn">&#x203A;</li>
+                            </ul>
+                            <!--리뷰콘텐츠 박스-->
+                            <div class="bigbox_review">
+                                <div class="smallbox_review">
+                                    <a href="#" title="리뷰자세히보기"><img src="./images/review01.png" alt="리뷰이미지1"></a>
+                                    <div class="box_txtreview">
+                                        <h4>스칼프 퓨리파잉 마이크로바이옴 샴푸</h4>
+                                        <p>향도 좋고 촉촉해서 사용감이 좋은 샴푸에요!거품도 쫀쫀하고 풍성하게 잘 나서 온가족이 같이 쓰기 좋아요~</p>
+                                        <p>5416****님</p>
+                                    </div>
+                                </div>
+                                <div class="smallbox_review">
+                                    <a href="#" title="리뷰자세히보기"><img src="./images/review02.png" alt="리뷰이미지2"></a>
+                                    <div class="box_txtreview">
+                                        <h4>차가 젤리약산성 클렌저</h4>
+                                        <p>수부지에 살짝 민감성피부인 저는 성분부터 꼼꼼하게 따지는 편인데, 원오세븐은 약산성 클렌저이기 때문에 아침, 저녁으로 부담없이 사용이 가능하다는 점이 참 마음에 들었어요.
+                                            세안 후에도 피부가 당기거나 하지않고 촉촉하더라구요. 게다가 몽글몽글한 젤 타입의 텍스처 안에 녹차 잎이 들어있어 부드러운 스크럽도 자연스럽게 되는 것 같아서 더 좋았어요.</p>
+                                        <p>gxwg****님</p>
+                                    </div>
+                                </div>
+                                <div class="smallbox_review">
+                                    <a href="#" title="리뷰자세히보기"><img src="./images/review03.png" alt="리뷰이미지3"></a>
+                                    <div class="box_txtreview">
+                                        <h4>에브리데이 플럼프하이드로 크림</h4>
+                                        <p>와 이거 건성피부라면 무조건이에요 !
+                                            보습 잘 되는 크림으로 강추하고 싶어요.
+                                            너무 워터리한 크림은 보습이 아쉬운데, 이건 너무 워터리하지도 않고 너무 무겁지도 않아 딱이네요</p>
+                                        <p>uy45****님</p>
+                                    </div>
+                                </div>
+                                <div class="smallbox_review">
+                                        <a href="#" title="리뷰자세히보기"><img src="./images/review04.png" alt="리뷰이미지4"></a>
+                                    <div class="box_txtreview">
+                                        <h4>에</h4>
+                                        <p>와</p>
+                                        <p>u님</p>
+                                    </div>
+                                </div>
+                                <div class="smallbox_review">
+                                    <a href="#" title="리뷰자세히보기"><img src="./images/review05.png" alt="리뷰이미지5"></a>
+                                    <div class="box_txtreview">
+                                        <h4>브</h4>
+                                        <p>이</p>
+                                        <p>y님</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!--section8(인스타)-->
+            <section class="sec_insta">
+                <h2>인스타및sns</h2>
+                <article class="box_insta">
+                    <div class="box_l_insta">
+                        <div class="box_minitit1insta">
+                            <p>107 official | <strong>INSTAGRAM</strong></p>
+                        </div>
+                        <div class="box_img1insta">
+                            <img src="./images/instagram05.jpg" title="인스타이미지1">
+                        </div>
+                        <div class="box_img1insta">
+                            <img src="./images/instagram06.png" title="인스타이미지2">
+                        </div>
+                    </div>
+                    <div class="box_r_insta">
+                        <div class="box_minitit2insta">
+                            <p><strong>@107_korea</strong></p>
+                        </div>
+                        <div class="box_img2insta">
+                            <img src="./images/instagram03.jpg" title="인스타이미지3">
+                        </div>
+                        <div class="box_img2insta">
+                            <img src="./images/instagram04.jpg" title="인스타이미지4">
+                        </div>
+                    </div>
+                    <div class="box_sns">
+                        <p>Connect With Us</p>
+                        <div class="box_icon">
+                            <a href="#" title="인스타그램바로가기"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="페이스북바로가기"><i class="fab fa-facebook"></i></a>
+                            <a href="#" title="유투브바로가기"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </section>
         </main>
 
-
-
         <footer>
-
+            <div class="box_footer">
+                <h1><a href="#" title=".메인페이지"><img src="./images/Logo_footer.png" alt="하단로고"></a></h1>
+                <div class="f_top">
+                    <div class="box_customer">
+                        <h2>customer center</h2>
+                        <h3>customer center</h3>
+                        <p>10000-0000</p>
+                        <p>상담시간 | 10:00~17:00 (점심시간 | 13:00~14:00)<br>토, 일, 공휴일 휴무</p>
+                    </div>
+                    <div class="box_etc">
+                        <div class="box_minititetc">
+                            <h2>about</h2>
+                            <h3>about</h3>
+                            <div>
+                                <p><a href="#" title="soseo">'soseo'</a></p>
+                                <p><a href="#" title="essentials">'essentials'</a></p>
+                                <p><a href="#" title="ourstory">ourstory</a></p>
+                                <p><a href="#" title="CSR">CSR</a></p>
+                            </div>
+                        </div>
+                        <div class="box_minititetc">
+                            <h2>account</h2>
+                            <h3>account</h3>
+                            <div>
+                                <p><a href="#" title="로그인">로그인</a></p>
+                                <p><a href="#" title="회원가입">회원가입</a></p>
+                                <p><a href="#" title="아이디,비밀번호찾기">아이디,비밀번호찾기</a></p>
+                                <p><a href="#" title="맴버십">맴버십</a></p>
+                            </div>
+                        </div>
+                        <div class="box_minititetc">
+                            <h2>user info</h2>
+                            <h3>user info</h3>
+                            <div>
+                                <p><a href="#" title="FAQ">FAQ</a></p>
+                                <p><a href="#" title="이용약관">이용약관</a></p>
+                                <p><a href="#" title="개인정보처리방침">개인정보처리방침</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="f_bottom">
+                    <h2>출처</h2>
+                    <address>(주)원오세븐 대표자:ㅇㅇㅇ,ㅇㅇㅇ 대표번호:02-0000-0000 이메일:AA@107beauty.com<br>사업자등록번호:120-00-00000 주소:00000 서울특별시 ㅇㅇ구 ㅇㅇㅇ로00길00<br>통신판매업신고:0000-ㅇㅇㅇ동-0000 <a href="#" title="사업자정보확인">[사업자정보확인]</a><br>개인정보보호책임자:ㅇㅇㅇ 안전거래를 위해 결제시 저희 쇼핑몰에서 가입한 PG사의 구매안전서비스를 이용하실 수 있습니다. <a href="#" tilte="서비스가입사실확인">[서비스가입사실확인]</a></address>
+                    <span>Copyright ⓒ 원오세븐. ALL rights reserved.</span>
+                </div>
+            </div>
         </footer>
+        <a href="#toggle" title="상단 바로가기" class="top_btn"><i class="fas fa-angle-up"></i></a>
     </form>
 </body>
 </html>

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* 기본서식 */
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&family=Hind:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+html, body{
+    scroll-behavior: smooth;}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    color: #404040;
+    overflow-x: hidden;
+}
+
+h2{display: none;}
+h3{
+    font-family: 'Headland One', serif;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+a{
+    color: #404040;
+    text-decoration: none;
+}
