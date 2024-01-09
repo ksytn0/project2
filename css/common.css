@@ -33,6 +33,9 @@
     background: #404040 !important;
 }
 
+/*section 간격서식*/
+section{padding: 100px 0px; box-sizing: border-box;}
+
 /*슬라이드바*/
 .slidebar_out{
     width: 1000px; height: 8px;
@@ -41,17 +44,11 @@
     box-sizing: border-box;
     margin: 0px auto;
 }
-@media screen and (min-width: 767px) and (max-width: 1400px){
-    .slidebar_out{width: 540px; height: 6px;}
-}
 .slidebar_out > .slidebar_in{
     width: 800px; height: 6px;
     border: 1px solid #8E8E8E;
     background: #8E8E8E;;
     box-sizing: border-box;
-}
-@media screen and (min-width: 767px) and (max-width: 1400px){
-    .slidebar_out > .slidebar_in{width: 412px; height: 4px;}
 }
 
 /*좌우버튼*/
@@ -62,12 +59,6 @@
     font-size: 50px;
     text-align: center;
     line-height: 60px;
-}
-
-/*section 간격서식*/
-section{padding: 100px 0px; box-sizing: border-box;}
-@media screen and (min-width: 767px) and (max-width: 1400px){
-    section{padding: 60px 0px; box-sizing: border-box;}
 }
 
 /*네모버튼서식*/
@@ -83,18 +74,58 @@ section{padding: 100px 0px; box-sizing: border-box;}
     line-height: 50px;
     letter-spacing: 3px;
 }
-@media screen and (min-width: 767px) and (max-width: 1400px){
-    .square_btn{
-        width: 159px; height: 40px;
-        font-size: 16px;
-        line-height: 40px;
-    }
-}
 
 /*글자버튼서식*/
 .word_btn{
     font-family: 'Hind', serif;
 }
+
+
+/*tablet서식(767~1400px)*/
 @media screen and (min-width: 767px) and (max-width: 1400px){
+    
+    /*section 간격서식*/
+    section{padding: 60px 0px; box-sizing: border-box;}
+
+    /*슬라이드바*/
+    .slidebar_out{width: 540px; height: 6px;}
+    .slidebar_out > .slidebar_in{width: 412px; height: 4px;}
+
+    /*네모버튼서식*/
+    .square_btn{
+        width: 159px; height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    /*글자버튼서식*/
     .word_btn{font-size: 15px;}
+}
+
+/*tablet서식(~767px)*/
+@media screen and (max-width: 767px){
+    
+    /*컨트롤버튼서식*/
+    .ctrl_btn li{
+        width: 8px; height: 8px;
+        border: 1px solid #404040;
+        margin-right: 6px;
+    }
+    /*section 간격서식*/
+    section{padding: 50px 0px 30px; box-sizing: border-box;}
+
+    /*슬라이드바*/
+    .slidebar_out{width: 273px; height: 6px;}
+    .slidebar_out > .slidebar_in{width: 108px; height: 4px;}
+
+    /*네모버튼서식*/
+    .square_btn{
+        width: 100px; height: 27px;
+        font-size: 10px;
+        line-height: 27px;
+    }
+
+    /*글자버튼서식*/
+    .word_btn{font-size: 10px;}
+
 }

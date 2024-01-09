@@ -118,7 +118,7 @@ main{
 .black{
     font-weight: 500;
 }
-.box_banner > div > img{
+.box_banner > div img{
     /*width: 100%;*/
 }
 .img_banner1{z-index: 3;}
@@ -379,7 +379,7 @@ main{
     width: 1400px; margin: 0px auto;
     display: flex; justify-content: space-between;
 }
-/*리뷰 왼쪽박스*/
+/*리뷰 왼쪽(위쪽)박스*/
 .box_l_review{
     width: 333px; height: 450px;
     text-align: center;
@@ -396,7 +396,7 @@ main{
     line-height: 29px;
     letter-spacing: 1px;
 }
-/*리뷰 오른쪽박스*/
+/*리뷰 오른쪽(아래쪽)박스*/
 .box_r_review{
     width: 1050px; height: 450px;
     display: flex;
@@ -489,7 +489,7 @@ https://inpa.tistory.com/entry/CSS-%F0%9F%93%9A-float#clear_%EC%86%8D%EC%84%B1*/
     margin: 0px auto;
     position: relative;
 }
-/*왼쪽인스타박스*/
+/*인스타왼쪽(위쪽)박스*/
 .box_l_insta{
     width: 650px; height: 600px;
     display: flex;
@@ -520,7 +520,7 @@ https://inpa.tistory.com/entry/CSS-%F0%9F%93%9A-float#clear_%EC%86%8D%EC%84%B1*/
     height: 100%;
     transform: translateX(-102px);
 }
-/*오른쪽인스타박스*/
+/*인스타오른쪽(아래쪽)박스*/
 .box_r_insta{
     width: 680px; height: 380px;
     display: flex; flex-wrap:wrap;
@@ -548,6 +548,7 @@ https://inpa.tistory.com/entry/CSS-%F0%9F%93%9A-float#clear_%EC%86%8D%EC%84%B1*/
     width: 100%;
     transform: translateY(-43px);
 }
+/*sns아이콘*/
 .box_sns{
     width: 242px; height: 100px;
     position: absolute; right: 20px; bottom: 55px;
@@ -615,8 +616,15 @@ footer h3{
 .box_etc > .box_minititetc{
     margin-left: 50px;
 }
-.box_etc > .box_minititetc p{
+.box_etc > .box_minititetc > div{
+    margin-top: 10px;
+}
+.box_etc > .box_minititetc > div > p{
     font-size: 12px;
+    line-height: 18px;
+}
+.box_etc > .box_minititetc > div > p > a{
+    color: #fff;
 }
 /*푸터바텀*/
 .f_bottom{
@@ -628,5 +636,8 @@ footer h3{
     font-style: normal;
     line-height: 20px;
     margin-bottom: 20px;
+}
+.f_bottom > address > a{
+    color: #fff;
 }
 /*}*/
