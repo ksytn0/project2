@@ -18,6 +18,9 @@ h3{
     font-size: 28px;
     font-weight: normal;
 }
+@media screen and (min-width: 767px) and (max-width: 1400px){
+    h3{font-size: 22px; line-height: 28px;}
+}
 
 a{
     color: #404040;

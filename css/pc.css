@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+/*pc서식*/
+/*@media screen and (min-width: 1401px){*/
+
 /*헤더서식*/
 /*header-top*/
 .h_top{
@@ -93,7 +96,7 @@ main{
 }
 /*section1(배너슬라이드)*/
 .sec_banner{
-    width: 100%;
+    /*width: 100%;*/
     padding: 0px;
 }
 .box_banner{
@@ -101,9 +104,7 @@ main{
     height: 500px;
 }
 .box_banner > div{
-    position: absolute;
-    width: 100%;
-    top: 0px; left: 0px;
+    /*width: 100%;*/
 }
 .box_banner > div > a > p{
     font-size: 24px;
@@ -118,7 +119,7 @@ main{
     font-weight: 500;
 }
 .box_banner > div > img{
-    width: 100%;
+    /*width: 100%;*/
 }
 .img_banner1{z-index: 3;}
 .img_banner2{z-index: 2; display: none;}
@@ -222,7 +223,6 @@ main{
 .box_membership > li > .box_imgmembership{
     width: 400px; height: 140px;
     padding-right: 30px;
-    
 }
 .box_membership > li:last-child > .box_imgmembership{
     padding-right: 0px;
@@ -629,3 +629,4 @@ footer h3{
     line-height: 20px;
     margin-bottom: 20px;
 }
+/*}*/

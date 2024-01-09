@@ -41,11 +41,17 @@
     box-sizing: border-box;
     margin: 0px auto;
 }
+@media screen and (min-width: 767px) and (max-width: 1400px){
+    .slidebar_out{width: 540px; height: 6px;}
+}
 .slidebar_out > .slidebar_in{
     width: 800px; height: 6px;
     border: 1px solid #8E8E8E;
     background: #8E8E8E;;
     box-sizing: border-box;
+}
+@media screen and (min-width: 767px) and (max-width: 1400px){
+    .slidebar_out > .slidebar_in{width: 412px; height: 4px;}
 }
 
 /*좌우버튼*/
@@ -60,6 +66,9 @@
 
 /*section 간격서식*/
 section{padding: 100px 0px; box-sizing: border-box;}
+@media screen and (min-width: 767px) and (max-width: 1400px){
+    section{padding: 60px 0px; box-sizing: border-box;}
+}
 
 /*네모버튼서식*/
 .square_btn{
@@ -74,8 +83,18 @@ section{padding: 100px 0px; box-sizing: border-box;}
     line-height: 50px;
     letter-spacing: 3px;
 }
+@media screen and (min-width: 767px) and (max-width: 1400px){
+    .square_btn{
+        width: 159px; height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+    }
+}
 
 /*글자버튼서식*/
 .word_btn{
     font-family: 'Hind', serif;
+}
+@media screen and (min-width: 767px) and (max-width: 1400px){
+    .word_btn{font-size: 15px;}
 }
