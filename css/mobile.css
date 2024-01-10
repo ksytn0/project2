@@ -13,7 +13,7 @@
     /*상단로고(h1)*/
     .h_bottom > h1 > a{
         line-height: 70px;
-        left: 50%;
+        left: 45%;
     }
     .h_bottom > h1 > a > img{
         height: 25px;
@@ -188,6 +188,7 @@
         height: 576px;
     }
     .sec_soseo > article{
+        width: 375px;
         display: flex;
         flex-direction: column;
     }
@@ -220,6 +221,7 @@
         height: 732px;
     }
     .sec_essentials > article{
+        width: 375px;
         display: flex;
         flex-direction: column;
     }
@@ -308,101 +310,146 @@
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
         /*section8(인스타)*/
     .sec_insta{
-        padding: 80px 0px 60px;
+        padding: 80px 0px 50px;
     }
     .box_insta{
-        width: 834px; height: 1070px;
+        width: 375px; height: 774px;
     }
     /*인스타왼쪽(위쪽)박스*/
     .box_l_insta{
-        width: 500px; height: 500px;
+        width: 280px; height: 280px;
         left:inherit;
         right: 0px; top: 0px;
     }
     .box_l_insta > .box_minitit1insta > p{
-        width: 270px;
-        top: 116px; left: -152px;
-        font-size: 22px;
-        line-height: 35px;
+        width: 205px;
+        top: 90px; left: -115px;
+        font-size: 16px;
+        line-height: 24px;
     }
     .box_img1insta{
-        width: 250px; height: 500px;
+        width: 140px; height: 280px;
         left: 0px;
+    }
+    .box_img1insta > img{
+        transform: translateX(-155px);
+    }
+    .box_img1insta:last-child > img{
+        transform: translateX(-50px);
     }
     /*인스타오른쪽(아래쪽)박스*/
     .box_r_insta{
-        width: 680px; height: 315px;
-        left: 0px; top: 595px;
+        width: 320px; height: 176px;
+        left: 0px; top: 380px;
     }
     .box_r_insta > .box_minitit2insta{
-        width: 560px;
+        width: 320px;
     }
     .box_r_insta > .box_minitit2insta > p{
-        font-size: 22px;
-        line-height: 35px;
+        font-size: 16px;
+        line-height: 26px;
     }
     .box_img2insta{
-        width: 280px; height: 280px;
+        width: 160px; height: 160px;
+    }
+    .box_img2insta > img{
+        transform: translateY(-40px);
+    }
+    .box_img2insta:last-child > img{
+        transform: translateY(-40px);
     }
     /*sns아이콘*/
     .box_sns{
-        width: 190px; height: 80px;
+        width: 139px; height: 64px;
         right: initial;
-        left: 40%; top: 990px;
+        left: 35%; bottom: 0px;
     }
     .box_sns > p{
-        font-size: 22px;
-        letter-spacing: 2px;
-        line-height: 35px;
-        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 1.5px;
+        margin-bottom: 18px;
     }
     .box_sns > .box_icon{
         margin-left: 0px;
     }
     .box_sns > .box_icon .fab{
-        font-size: 25px;
-        padding-left: 26px;
+        font-size: 20px;
+        padding-left: 18px;
     }
 
 
 
     /*푸터서식*/
     .box_footer{
-        width: 834px;
-        padding: 35px 0px;
+        width: 375px;
+        padding: 35px 0px 20px;
+    }
+    footer h3{
+        font-size: 14px;
+        line-height: 22px;
     }
     .box_footer > h1{
-        margin-left: 34px;
+        margin-left: 25px;
+    }
+    .box_footer > h1 img{
+        height: 30px;
     }
     /*푸터탑*/
     .f_top{
         margin: 20px 0px;
         padding-bottom: 20px;
+        flex-direction: column;
     }
     .f_top > .box_customer{
-        margin-left: 34px;
+        margin-left: 25px;
+    }
+    .box_customer > p{
+        font-size: 22px;
+        line-height: 32px;
+        margin-top: 4px;
     }
     .box_customer > p:last-child{
+        font-size: 12px;
+        line-height: 17px;
         margin-top: 4px;
     }
     .f_top > .box_etc{
-        margin-right: 34px;
+        margin: 20px 0px 0px;
     }
     .box_etc > .box_minititetc{
-        margin-left: 35px;
+        margin-left: 47px;
     }
-    .box_etc > .box_minititetc:nth-child(2) > div > p:nth-child(3){
-        width: 123px;
+    .box_etc > .box_minititetc:first-child{
+        margin-left: 25px;
     }
-    .box_etc > .box_minititetc:last-child > div > p:last-child{
-        width: 105px;
+    .box_etc > .box_minititetc > div{
+        margin-top: 4px;
+    }
+    .box_etc > .box_minititetc > div > p{
+        font-size: 10px;
+        letter-spacing: 1px;
     }
     /*푸터바텀*/
     .f_bottom{
-        margin-left: 34px; margin-right: 34px;
+        margin-left: 25px; margin-right: 25px;
+        font-size: 10px;
+        letter-spacing: 1.3px;
     }
+    .jump{display: block;}
 
 
 

@@ -602,7 +602,7 @@ footer h3{
 }
 .box_customer > p{
     font-size: 28px;
-    line-height: 41px;;
+    line-height: 41px;
 }
 .box_customer > p:last-child{
     font-size: 14px;
@@ -640,4 +640,5 @@ footer h3{
 .f_bottom > address > a{
     color: #fff;
 }
+.jump{display: none;}
 /*}*/

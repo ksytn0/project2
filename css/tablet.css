@@ -15,7 +15,7 @@
     /*상단로고(h1)*/
     .h_bottom > h1 > a{
         line-height: 100px;
-        left: 50%;
+        left: 45%;
     }
     /*내비게이션(gnb)*/
     .gnb{

@@ -123,6 +123,7 @@ section{padding: 100px 0px; box-sizing: border-box;}
         width: 100px; height: 27px;
         font-size: 10px;
         line-height: 27px;
+        letter-spacing: 2px;
     }
 
     /*글자버튼서식*/
