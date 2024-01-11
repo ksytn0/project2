@@ -12,6 +12,7 @@
     .h_bottom{
         height: 80px !important; /**/
         background: #F7F3ED; /**/
+        overflow: initial;
     }
     /*상단로고(h1)*/
     .h_bottom > h1 > a{
@@ -20,8 +21,40 @@
     }
     /*내비게이션(gnb)*/
     .gnb{
-        
+        background: rgba(255,255,255,.9);
+        height: 250px; top: 80px;
+        padding: initial;
+        display: none;
     }
+    .gnb > ul{
+        padding-left: 9%;
+        width: 75%;
+    }
+    .gnb > ul > li > a{
+        display: none;
+    }
+    /*서브메뉴*/
+    .sub{
+        z-index: 99999;
+        top: 30px;
+        width: initial;
+    }
+    .sub1{left: initial;}
+    .sub2{left: initial;}
+    .sub3{left: initial;}
+    .sub4{left: initial; margin-left: 20px;}
+    .sub5{left: initial;}
+    .sub > dt{
+        font-size: 24px;
+    }
+    .sub > dd{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    #toggle:checked + header > .h_bottom > .gnb{
+        display: block;
+    }
+
     /*검색,장바구니 아이콘*/
     .icon{
         left: 53px; top: 25px;

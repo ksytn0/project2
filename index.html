@@ -83,7 +83,7 @@
                                 <dd><a href="#" title="SNS">SNS</a></dd>
                                 <dd><a href="#" title="리뷰게시판">리뷰 게시판</a></dd>
                                 <dd><a href="#" title="107매거진">107 매거진</a></dd>
-                                <dd><a href="#" title="맴버십">맴버심</a></dd>
+                                <dd><a href="#" title="맴버십">맴버십</a></dd>
                             </dl>
                         </li>
                         <li>
@@ -121,15 +121,27 @@
         <script>
             $(document).ready(function(){
 
-                //gnb에 마우스오버시 h_bottom의 높이가 커지면서 서브가 나타남.
-                $('.gnb').mouseenter(function(){
-                    $('.h_bottom').stop().animate({'height':'435px'},700);
-                });
-                
-                //마우스아웃시 h_bottom의 높이가 원래높이로 작아지면서 서브가 사라짐.
-                $('.gnb').mouseleave(function(){
-                    $('.h_bottom').stop().animate({'height':'100px'},700);
-                });
+                let w_width;
+
+                $(window).resize(function(){
+                    w_width = $(window).innerWidth();
+
+                    if(w_width>=1401){
+                        //gnb에 마우스오버시 h_bottom의 높이가 커지면서 서브가 나타남.
+                        $('.gnb').mouseenter(function(){
+                            $('.h_bottom').stop().animate({'height':'435px'},700);
+                        });
+                        
+                        //마우스아웃시 h_bottom의 높이가 원래높이로 작아지면서 서브가 사라짐.
+                        $('.gnb').mouseleave(function(){
+                            $('.h_bottom').stop().animate({'height':'100px'},700);
+                        });
+                    }else if(w_width>=768){
+
+                    }else{
+
+                    }
+                }).resize();
             });
         </script>
 
