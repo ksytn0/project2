@@ -4,6 +4,11 @@
 /*@media screen and (min-width: 1401px){*/
 
 /*헤더서식*/
+header{
+    position:absolute; top:0px;
+    width: 100%;
+    z-index: 9999;
+}
 /*header-top*/
 .h_top{
     height: 30px;
@@ -39,15 +44,27 @@
     display: none;
 }
 #toggle{display: none;}
-
 /*header-bottom*/
 .h_bottom{
     height: 100px;
-    background: #F7F3ED;
+    background: rgba(255,255,255,.9);
     display: flex;
     position: relative;
+    overflow: hidden;
+}
+#h_bottom::after{
+    display: block;
+    content: "";
+    width: 100%;
+    opacity: 0;
+}
+#h_bottom:hover::after{
+    opacity: 1;
 }
 /*상단로고(h1)*/
+.h_bottom > h1{
+    z-index: 9999;
+}
 .h_bottom > h1 > a{
     line-height: 120px;
     position: absolute; left: 86px;
@@ -57,7 +74,11 @@
     font-family: 'Hind', sans-serif;
     line-height: 32px;
     display: flex;
-    position: absolute; left: 214px; bottom: 27px;
+    position: absolute;
+    background: #F7F3ED;
+    padding: 41px 0px 27px;
+    padding-left: 214px;
+    width: 100%;
 }
 .gnb > .c_btn{
     display: none;
@@ -69,12 +90,30 @@
     letter-spacing: 1px;
 }
 .gnb > ul > li > a > i{display:none;}
-.sub{display: none;}
-
+/*서브메뉴(sub)*/
+.sub{
+    width: 152px;
+    position: absolute; top: 130px;
+    text-align: center;
+    z-index: 9999;
+}
+.sub1{left: 302px;}
+.sub2{left: 592px;}
+.sub3{left: 901px;}
+.sub4{left: 1215px;}
+.sub5{left: 1488px;}
+.sub > dt{
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.sub > dd{
+    font-size: 18px;
+    line-height: 38px;
+}
 /*검색,장바구니 아이콘*/
 .icon{
     display: flex;
-    position: absolute; right: 81px; bottom: 22px;
+    position: absolute; right: 81px; top: 48px;
 }
 .icon > ul{
     width: 86px;
@@ -92,6 +131,7 @@
 
 /*메인서식*/
 main{
+    padding-top:130px;
     width: 100%;
 }
 /*section1(배너슬라이드)*/
@@ -101,7 +141,7 @@ main{
 }
 .box_banner{
     position: relative;
-    height: 500px;
+    
 }
 .box_banner > div{
     /*width: 100%;*/
@@ -640,5 +680,4 @@ footer h3{
 .f_bottom > address > a{
     color: #fff;
 }
-.jump{display: none;}
 /*}*/

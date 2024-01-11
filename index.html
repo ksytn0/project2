@@ -56,48 +56,53 @@
                     <ul>
                         <li>
                             <a href="#" title="">ourstory<i class="fas fa-angle-right"></i></a>
-                            <ul class="sub">
-                                <li><a href="#" title="우리의가치">우리의 가치</a></li>
-                                <li><a href="#" title="연혁및수상">연혁 및 수상</a></li>
-                                <li><a href="#" title="오시는길">오시는 길</a></li>
-                                <li><a href="#" title="캠페인">캠페인</a></li>
-                            </ul>
+                            <dl class="sub sub1">
+                                <dt>ourstory</dt>
+                                <dd><a href="#" title="우리의가치">우리의 가치</a></dd>
+                                <dd><a href="#" title="연혁및수상">연혁 및 수상</a></dd>
+                                <dd><a href="#" title="오시는길">오시는 길</a></dd>
+                                <dd><a href="#" title="캠페인">캠페인</a></dd>
+                            </dl>
                         </li>
                         <li>
                             <a href="#" title="">shop<i class="fas fa-angle-right"></i></a>
-                            <ul class="sub">
-                                <li><a href="#" title="제품전체보기">제품 전체보기</a></li>
-                                <li><a href="#" title="신제품">신제품</a></li>
-                                <li><a href="#" title="베스트셀러">베스트셀러</a></li>
-                                <li><a href="#" title="유형별제품">유형별 제품</a></li>
-                                <li><a href="#" title="라인별제품">라인별 제품</a></li>
-                            </ul>
+                            <dl class="sub sub2">
+                                <dt>shop</dt>
+                                <dd><a href="#" title="제품전체보기">제품 전체보기</a></dd>
+                                <dd><a href="#" title="신제품">신제품</a></dd>
+                                <dd><a href="#" title="베스트셀러">베스트셀러</a></dd>
+                                <dd><a href="#" title="유형별제품">유형별 제품</a></dd>
+                                <dd><a href="#" title="라인별제품">라인별 제품</a></dd>
+                            </dl>
                         </li>
                         <li>
                             <a href="#" title="">cummunity<i class="fas fa-angle-right"></i></a>
-                            <ul class="sub">
-                                <li><a href="#" title="공지사항">공지사항</a></li>
-                                <li><a href="#" title="SNS">SNS</a></li>
-                                <li><a href="#" title="리뷰게시판">리뷰 게시판</a></li>
-                                <li><a href="#" title="107매거진">107 매거진</a></li>
-                                <li><a href="#" title="맴버십">맴버심</a></li>
-                            </ul>
+                            <dl class="sub sub3">
+                                <dt>cummunity</dt>
+                                <dd><a href="#" title="공지사항">공지사항</a></dd>
+                                <dd><a href="#" title="SNS">SNS</a></dd>
+                                <dd><a href="#" title="리뷰게시판">리뷰 게시판</a></dd>
+                                <dd><a href="#" title="107매거진">107 매거진</a></dd>
+                                <dd><a href="#" title="맴버십">맴버심</a></dd>
+                            </dl>
                         </li>
                         <li>
                             <a href="#" title="">event<i class="fas fa-angle-right"></i></a>
-                            <ul class="sub">
-                                <li><a href="#" title="프로모션">프로모션</a></li>
-                                <li><a href="#" title="진행이벤트">진행 이벤트</a></li>
-                                <li><a href="#" title="종료이벤트">종료 이벤트</a></li>
-                            </ul>
+                            <dl class="sub sub4">
+                                <dt>event</dt>
+                                <dd><a href="#" title="프로모션">프로모션</a></dd>
+                                <dd><a href="#" title="진행이벤트">진행 이벤트</a></dd>
+                                <dd><a href="#" title="종료이벤트">종료 이벤트</a></dd>
+                            </dl>
                         </li>
                         <li>
                             <a href="#" title="">learn<i class="fas fa-angle-right"></i></a>
-                            <ul class="sub">
-                                <li><a href="#" title="소서">'소서'</a></li>
-                                <li><a href="#" title="에센셜">'에센셜'</a></li>
-                                <li><a href="#" title="발효술">'발효술'</a></li>
-                            </ul>
+                            <dl class="sub sub5">
+                                <dt>learn</dt>
+                                <dd><a href="#" title="소서">'소서'</a></dd>
+                                <dd><a href="#" title="에센셜">'에센셜'</a></dd>
+                                <dd><a href="#" title="발효술">'발효술'</a></dd>
+                            </dl>
                         </li>
                     </ul>
                 </nav>
@@ -112,6 +117,22 @@
                 </div>
             </div>
         </header>
+
+        <script>
+            $(document).ready(function(){
+
+                //gnb에 마우스오버시 h_bottom의 높이가 커지면서 서브가 나타남.
+                $('.gnb').mouseenter(function(){
+                    $('.h_bottom').stop().animate({'height':'435px'},700);
+                });
+                
+                //마우스아웃시 h_bottom의 높이가 원래높이로 작아지면서 서브가 사라짐.
+                $('.gnb').mouseleave(function(){
+                    $('.h_bottom').stop().animate({'height':'100px'},700);
+                });
+            });
+        </script>
+
 
         <main>
             <!--section1(메인배너)-->
@@ -506,7 +527,7 @@
                 </div>
             </div>
         </footer>
-        <a href="#toggle" title="상단 바로가기" class="top_btn"><i class="fas fa-angle-up"></i></a>
+        <a href="#" title="상단 바로가기" class="top_btn"><i class="fas fa-angle-up"></i></a>
     </form>
 </body>
 </html>

@@ -10,7 +10,8 @@
     }
     /*header-bottom*/
     .h_bottom{
-        height: 80px;
+        height: 80px !important; /**/
+        background: #F7F3ED; /**/
     }
     /*상단로고(h1)*/
     .h_bottom > h1 > a{
@@ -19,11 +20,11 @@
     }
     /*내비게이션(gnb)*/
     .gnb{
-        display: none;
+        
     }
     /*검색,장바구니 아이콘*/
     .icon{
-        left: 53px; bottom: 25px;
+        left: 53px; top: 25px;
     }
     .icon > ul{
         width: 91px;
@@ -37,20 +38,18 @@
 
 
     /*메인서식*/
+    main{
+        padding-top:110px;
+        width: 100%;
+    }
     /*section1(배너슬라이드)*/
-    .box_banner{
-        height: 360px;
-    }
-    .box_banner > div{
-        height: 360px;
-    }
     .box_banner > div > a > p{
         font-size: 18px;
         line-height: 26px;
         top: 130px; left: 10%;
     }
     .box_banner > div img{
-        height: 100%;
+        width: 100%;
     }
     /*컨트롤버튼*/
     .box_banner .ctrl_btn{
